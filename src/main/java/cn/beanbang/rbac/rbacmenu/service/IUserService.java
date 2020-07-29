@@ -1,10 +1,8 @@
 package cn.beanbang.rbac.rbacmenu.service;
 
-import cn.beanbang.rbac.rbacmenu.domain.User;
-import cn.beanbang.rbac.rbacmenu.mapper.UserMapper;
+import cn.beanbang.rbac.rbacmenu.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**

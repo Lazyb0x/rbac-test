@@ -1,11 +1,10 @@
-package cn.beanbang.rbac.rbacmenu.domain;
+package cn.beanbang.rbac.rbacmenu.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
-import org.springframework.security.core.userdetails.UserDetails;
 
 import java.io.Serializable;
 

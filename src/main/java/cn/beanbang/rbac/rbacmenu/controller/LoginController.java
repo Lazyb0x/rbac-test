@@ -1,7 +1,7 @@
 package cn.beanbang.rbac.rbacmenu.controller;
 
 
-import cn.beanbang.rbac.rbacmenu.domain.User;
+import cn.beanbang.rbac.rbacmenu.entity.User;
 import cn.beanbang.rbac.rbacmenu.util.RestResult;
 import cn.beanbang.rbac.rbacmenu.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;

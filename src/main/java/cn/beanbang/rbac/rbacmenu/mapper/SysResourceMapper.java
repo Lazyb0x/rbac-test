@@ -1,6 +1,6 @@
 package cn.beanbang.rbac.rbacmenu.mapper;
 
-import cn.beanbang.rbac.rbacmenu.domain.SysResource;
+import cn.beanbang.rbac.rbacmenu.entity.SysResource;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

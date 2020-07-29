@@ -1,4 +1,4 @@
-package cn.beanbang.rbac.rbacmenu.domain;
+package cn.beanbang.rbac.rbacmenu.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
@@ -13,16 +13,24 @@ import java.io.Serializable;
  * @author Lazyb0x
  * @since 2020-07-27
  */
-public class SysUserRole extends Model<SysUserRole> {
+public class SysResource extends Model<SysResource> {
 
     private static final long serialVersionUID=1L;
 
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    private Integer userId;
+    /**
+     * 资源的名字
+     */
+    private String name;
 
-    private Integer roleId;
+    private String url;
+
+    /**
+     * 描述
+     */
+    private String desc;
 
 
     public Integer getId() {
@@ -33,20 +41,28 @@ public class SysUserRole extends Model<SysUserRole> {
         this.id = id;
     }
 
-    public Integer getUserId() {
-        return userId;
+    public String getName() {
+        return name;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public Integer getRoleId() {
-        return roleId;
+    public String getUrl() {
+        return url;
     }
 
-    public void setRoleId(Integer roleId) {
-        this.roleId = roleId;
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 
     @Override
@@ -56,10 +72,11 @@ public class SysUserRole extends Model<SysUserRole> {
 
     @Override
     public String toString() {
-        return "SysUserRole{" +
+        return "SysResource{" +
         "id=" + id +
-        ", userId=" + userId +
-        ", roleId=" + roleId +
+        ", name=" + name +
+        ", url=" + url +
+        ", desc=" + desc +
         "}";
     }
 }

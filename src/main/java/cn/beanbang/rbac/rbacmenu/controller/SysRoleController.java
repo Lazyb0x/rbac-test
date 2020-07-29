@@ -1,7 +1,7 @@
 package cn.beanbang.rbac.rbacmenu.controller;
 
 
-import cn.beanbang.rbac.rbacmenu.domain.SysRole;
+import cn.beanbang.rbac.rbacmenu.entity.SysRole;
 import cn.beanbang.rbac.rbacmenu.util.RestResult;
 import cn.beanbang.rbac.rbacmenu.service.ISysRoleService;
 import org.springframework.beans.factory.annotation.Autowired;

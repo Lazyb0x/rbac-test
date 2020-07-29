@@ -1,4 +1,4 @@
-package cn.beanbang.rbac.rbacmenu.domain;
+package cn.beanbang.rbac.rbacmenu.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
@@ -13,24 +13,16 @@ import java.io.Serializable;
  * @author Lazyb0x
  * @since 2020-07-27
  */
-public class SysResource extends Model<SysResource> {
+public class SysRole extends Model<SysRole> {
 
     private static final long serialVersionUID=1L;
 
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    /**
-     * 资源的名字
-     */
     private String name;
 
-    private String url;
-
-    /**
-     * 描述
-     */
-    private String desc;
+    private Boolean status;
 
 
     public Integer getId() {
@@ -49,20 +41,12 @@ public class SysResource extends Model<SysResource> {
         this.name = name;
     }
 
-    public String getUrl() {
-        return url;
+    public Boolean getStatus() {
+        return status;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
-    public String getDesc() {
-        return desc;
-    }
-
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setStatus(Boolean status) {
+        this.status = status;
     }
 
     @Override
@@ -72,11 +56,10 @@ public class SysResource extends Model<SysResource> {
 
     @Override
     public String toString() {
-        return "SysResource{" +
+        return "SysRole{" +
         "id=" + id +
         ", name=" + name +
-        ", url=" + url +
-        ", desc=" + desc +
+        ", status=" + status +
         "}";
     }
 }

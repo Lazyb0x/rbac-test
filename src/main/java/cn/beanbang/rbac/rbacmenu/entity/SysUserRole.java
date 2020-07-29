@@ -1,4 +1,4 @@
-package cn.beanbang.rbac.rbacmenu.domain;
+package cn.beanbang.rbac.rbacmenu.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
@@ -13,16 +13,16 @@ import java.io.Serializable;
  * @author Lazyb0x
  * @since 2020-07-27
  */
-public class SysRole extends Model<SysRole> {
+public class SysUserRole extends Model<SysUserRole> {
 
     private static final long serialVersionUID=1L;
 
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    private String name;
+    private Integer userId;
 
-    private Boolean status;
+    private Integer roleId;
 
 
     public Integer getId() {
@@ -33,20 +33,20 @@ public class SysRole extends Model<SysRole> {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
-    public Boolean getStatus() {
-        return status;
+    public Integer getRoleId() {
+        return roleId;
     }
 
-    public void setStatus(Boolean status) {
-        this.status = status;
+    public void setRoleId(Integer roleId) {
+        this.roleId = roleId;
     }
 
     @Override
@@ -56,10 +56,10 @@ public class SysRole extends Model<SysRole> {
 
     @Override
     public String toString() {
-        return "SysRole{" +
+        return "SysUserRole{" +
         "id=" + id +
-        ", name=" + name +
-        ", status=" + status +
+        ", userId=" + userId +
+        ", roleId=" + roleId +
         "}";
     }
 }

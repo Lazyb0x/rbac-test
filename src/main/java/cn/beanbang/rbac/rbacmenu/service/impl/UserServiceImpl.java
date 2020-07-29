@@ -1,11 +1,10 @@
 package cn.beanbang.rbac.rbacmenu.service.impl;
 
-import cn.beanbang.rbac.rbacmenu.domain.User;
+import cn.beanbang.rbac.rbacmenu.entity.User;
 import cn.beanbang.rbac.rbacmenu.mapper.UserMapper;
 import cn.beanbang.rbac.rbacmenu.service.IUserService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.mysql.cj.Session;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

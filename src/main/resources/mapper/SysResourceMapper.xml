@@ -3,7 +3,7 @@
 <mapper namespace="cn.beanbang.rbac.rbacmenu.mapper.SysResourceMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="cn.beanbang.rbac.rbacmenu.domain.SysResource">
+    <resultMap id="BaseResultMap" type="cn.beanbang.rbac.rbacmenu.entity.SysResource">
         <id column="id" property="id" />
         <result column="name" property="name" />
         <result column="url" property="url" />

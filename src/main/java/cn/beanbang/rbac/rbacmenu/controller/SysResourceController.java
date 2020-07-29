@@ -1,7 +1,7 @@
 package cn.beanbang.rbac.rbacmenu.controller;
 
 
-import cn.beanbang.rbac.rbacmenu.domain.SysResource;
+import cn.beanbang.rbac.rbacmenu.entity.SysResource;
 import cn.beanbang.rbac.rbacmenu.service.ISysResourceService;
 import cn.beanbang.rbac.rbacmenu.util.RestResult;
 import org.springframework.beans.factory.annotation.Autowired;

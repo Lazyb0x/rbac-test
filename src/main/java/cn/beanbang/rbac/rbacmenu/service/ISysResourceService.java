@@ -1,6 +1,6 @@
 package cn.beanbang.rbac.rbacmenu.service;
 
-import cn.beanbang.rbac.rbacmenu.domain.SysResource;
+import cn.beanbang.rbac.rbacmenu.entity.SysResource;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

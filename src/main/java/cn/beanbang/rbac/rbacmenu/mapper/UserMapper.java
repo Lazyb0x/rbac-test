@@ -1,6 +1,6 @@
 package cn.beanbang.rbac.rbacmenu.mapper;
 
-import cn.beanbang.rbac.rbacmenu.domain.User;
+import cn.beanbang.rbac.rbacmenu.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 import java.util.List;
