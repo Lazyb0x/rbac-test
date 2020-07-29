@@ -1,4 +1,4 @@
-package cn.beanbang.rbacmenu.gen.entity;
+package cn.beanbang.rbac.rbacmenu.domain;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.extension.activerecord.Model;

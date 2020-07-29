@@ -1,6 +1,6 @@
-package cn.beanbang.rbacmenu.gen.service;
+package cn.beanbang.rbac.rbacmenu.service;
 
-import cn.beanbang.rbacmenu.gen.entity.SysPermit;
+import cn.beanbang.rbac.rbacmenu.domain.SysPermit;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

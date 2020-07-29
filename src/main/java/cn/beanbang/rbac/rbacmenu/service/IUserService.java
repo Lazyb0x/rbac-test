@@ -5,6 +5,7 @@ import cn.beanbang.rbac.rbacmenu.mapper.UserMapper;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * <p>
@@ -34,4 +35,11 @@ public interface IUserService extends IService<User> {
      * @return true: 从登录状态退出
      */
     boolean logout();
+
+    /**
+     * 列出某个角色的所有用户
+     * @param roleId 角色id
+     * @return 用户列表
+     */
+    List<User> listByRoleId(int roleId);
 }

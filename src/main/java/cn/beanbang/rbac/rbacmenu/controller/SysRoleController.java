@@ -2,13 +2,10 @@ package cn.beanbang.rbac.rbacmenu.controller;
 
 
 import cn.beanbang.rbac.rbacmenu.domain.SysRole;
-import cn.beanbang.rbac.rbacmenu.domain.vo.Result;
+import cn.beanbang.rbac.rbacmenu.util.RestResult;
 import cn.beanbang.rbac.rbacmenu.service.ISysRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import org.springframework.stereotype.Controller;
 
@@ -31,27 +28,27 @@ public class SysRoleController {
     ISysRoleService roleService;
 
     @PostMapping("/add")
-    public Result add(SysRole role){
+    public RestResult add(@RequestBody SysRole role){
         boolean res = roleService.save(role);
-        return Result.isSuccess(res);
+        return RestResult.isSuccess(res);
     }
 
     @GetMapping("/list")
-    public Result list(){
+    public RestResult list(){
         List<SysRole> roles = roleService.list();
-        return Result.success(roles);
+        return RestResult.success(roles);
     }
 
     @PostMapping("/update")
-    public Result update(SysRole role){
-        boolean res = roleService.save(role);
-        return Result.isSuccess(res);
+    public RestResult update(@RequestBody SysRole role){
+        boolean res = roleService.saveOrUpdate(role);
+        return RestResult.isSuccess(res);
     }
 
     @DeleteMapping("/remove")
-    public Result remove(int id){
+    public RestResult remove(int id){
         boolean res = roleService.removeById(id);
-        return Result.isSuccess(res);
+        return RestResult.isSuccess(res);
     }
 }
 

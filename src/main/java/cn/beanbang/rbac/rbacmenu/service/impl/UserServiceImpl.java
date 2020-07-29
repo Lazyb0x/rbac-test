@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 /**
  * <p>
@@ -63,6 +64,12 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
             session.removeAttribute("user");
         }
         return res;
+    }
+
+    @Override
+    public List<User> listByRoleId(int roleId) {
+        List<User> users = userMapper.selectByRoleId(roleId);
+        return users;
     }
 
 

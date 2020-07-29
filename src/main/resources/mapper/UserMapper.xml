@@ -9,4 +9,11 @@
         <result column="password" property="password" />
     </resultMap>
 
+    <select id="selectByRoleId" parameterType="int" resultMap="BaseResultMap">
+        select u.id, u.name, u.password
+	    from sys_user_role as ur
+	    inner JOIN sys_user as u
+	    on u.id=ur.user_id
+	    where ur.role_id=#{roleId};
+    </select>
 </mapper>

@@ -1,6 +1,6 @@
 package cn.beanbang.rbacmenu.gen.mapper;
 
-import cn.beanbang.rbacmenu.gen.entity.SysUserRole;
+import cn.beanbang.rbac.rbacmenu.domain.SysUserRole;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

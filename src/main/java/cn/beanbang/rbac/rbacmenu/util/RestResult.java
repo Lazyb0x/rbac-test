@@ -1,11 +1,11 @@
-package cn.beanbang.rbac.rbacmenu.domain.vo;
+package cn.beanbang.rbac.rbacmenu.util;
 
 import lombok.Data;
 
 import java.io.Serializable;
 
 @Data
-public class Result implements Serializable {
+public class RestResult implements Serializable {
 
     private Integer code;
 
@@ -13,10 +13,10 @@ public class Result implements Serializable {
 
     private Object data;
 
-    public Result() {
+    public RestResult() {
     }
 
-    public Result(ResultCode resultCode, Object data) {
+    public RestResult(ResultCode resultCode, Object data) {
         setResultCode(resultCode);
         this.data = data;
     }
@@ -26,23 +26,23 @@ public class Result implements Serializable {
         this.message = resultCode.message();
     }
 
-    public static Result success() {
-        Result result = new Result();
+    public static RestResult success() {
+        RestResult result = new RestResult();
         result.setResultCode(ResultCode.SUCCESS);
         return result;
     }
 
-    public static Result success(Object object) {
-        return new Result(ResultCode.SUCCESS, object);
+    public static RestResult success(Object object) {
+        return new RestResult(ResultCode.SUCCESS, object);
     }
 
-    public static Result faliure() {
-        Result result = new Result();
+    public static RestResult faliure() {
+        RestResult result = new RestResult();
         result.setResultCode(ResultCode.FAILURE);
         return result;
     }
 
-    public static Result isSuccess(boolean success) {
+    public static RestResult isSuccess(boolean success) {
         if (success) {
             return success();
         } else {

@@ -30,4 +30,13 @@ class IUserServiceTest {
         user.setPassword("1234526");
         System.out.println(userService.login(user));
     }
+
+    @Test
+    void listByRole(){
+        int roleId = 1;
+        List<User> users = userService.listByRoleId(roleId);
+        for (User user : users){
+            System.out.println(user);
+        }
+    }
 }

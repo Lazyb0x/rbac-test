@@ -1,8 +1,8 @@
-package cn.beanbang.rbacmenu.gen.service.impl;
+package cn.beanbang.rbac.rbacmenu.service.impl;
 
-import cn.beanbang.rbacmenu.gen.entity.SysResource;
-import cn.beanbang.rbacmenu.gen.mapper.SysResourceMapper;
-import cn.beanbang.rbacmenu.gen.service.ISysResourceService;
+import cn.beanbang.rbac.rbacmenu.domain.SysResource;
+import cn.beanbang.rbac.rbacmenu.mapper.SysResourceMapper;
+import cn.beanbang.rbac.rbacmenu.service.ISysResourceService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

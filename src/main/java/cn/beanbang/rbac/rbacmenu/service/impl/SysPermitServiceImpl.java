@@ -1,8 +1,8 @@
-package cn.beanbang.rbacmenu.gen.service.impl;
+package cn.beanbang.rbac.rbacmenu.service.impl;
 
-import cn.beanbang.rbacmenu.gen.entity.SysPermit;
-import cn.beanbang.rbacmenu.gen.mapper.SysPermitMapper;
-import cn.beanbang.rbacmenu.gen.service.ISysPermitService;
+import cn.beanbang.rbac.rbacmenu.domain.SysPermit;
+import cn.beanbang.rbac.rbacmenu.mapper.SysPermitMapper;
+import cn.beanbang.rbac.rbacmenu.service.ISysPermitService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
